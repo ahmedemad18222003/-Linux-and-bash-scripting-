@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "The 'cal' command is used to display a calendar in the terminal. 
+It can be used to view the current month, a specific month and year, or a full year. 
+It is a useful tool for quickly checking dates and planning events."
