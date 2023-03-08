@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# This script allows the user to play Bastet
+
+# Check if Bastet is installed
+if !  -x "$(command -v bastet)" ; then
+    echo 'Error: Bastet is not installed.' >&2
+    exit 1
+fi
+
+# Start Bastet
+echo "Let's chill and play Bastet!"
+bastet
