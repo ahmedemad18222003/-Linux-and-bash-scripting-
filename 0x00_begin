@@ -1,0 +1,12 @@
+#!/bin/bash
+# Create the Bash Scripting folder
+mkdir "Bash Scripting"
+
+#change directory to Bash Scripting
+cd "Bash Scripting"
+
+# Create all required files
+touch file1.txt file2.txt file3.txt
+
+# Print the contents of the folder
+ls -l
