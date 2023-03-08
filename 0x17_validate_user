@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Please enter your username:"
+read username
+
+if  "$username" != "Support" ; then
+  echo "Invalid username. Please try again."
+  exit 1
+fi
+
+echo "Please enter your password:"
+read -s password
+
+if  ${#password} -lt 8 ; then
+  echo "Password must be 8 characters or more. Please try again."
+  exit 1
+fi
+
+echo "Username and password accepted."
