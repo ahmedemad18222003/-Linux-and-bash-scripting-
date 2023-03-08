@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# This script will display the contents of the current directory, including hidden files and their permissions
+ls -al
