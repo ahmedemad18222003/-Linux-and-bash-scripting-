@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "You did a great job! You should be proud of yourself :) $USERNAME"
+
+username=$(whoami)
+echo "You did a great job!"
+echo "You should be proud of yourself :) $username"
