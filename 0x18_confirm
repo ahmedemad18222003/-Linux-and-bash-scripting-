@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# This script will list the current user's information in order to confirm their identity on the system.
+
+# Get the current user's username
+username=$(whoami)
+
+# Get the current user's real name
+realname=$(getent passwd $username | cut -d ':' -f 5 | cut -d ',' -f 1)
+
+# Get the current user's home directory
+homedir=$(getent passwd $username | cut -d ':' -f 6)
+
+# Get the current user's shell
+shell=$(getent passwd $username | cut -d ':' -f 7)
+
+# Print the user's information
+echo "Username: $username"
+echo "Real Name: $realname"
+echo "Home Directory: $homedir"
+echo "Shell: $shell"
