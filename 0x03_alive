@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the current permissions of the file
+PERMISSIONS=$(stat -c "%a" hello)
+
+# Check if the user and group have execute permissions
+if [ $PERMISSIONS == *"x"* ]; then
+  echo "User and group already have execute permissions"
+else
+  # Add execute permissions to the user and group
+  chmod 750 hello
+  echo "Added execute permissions to the user and group"
+fi
