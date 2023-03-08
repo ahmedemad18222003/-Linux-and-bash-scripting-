@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Prompt the user to enter the name of a file
+echo -n "Please enter the name of a file: "
+read filename
+
+# Check if the file exists
+while  ! -f $filename ; do
+  echo -n "File not found. Please enter the name of a file: "
+  read filename
+done
+
+echo "File found!"
